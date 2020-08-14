@@ -10,14 +10,15 @@ namespace FizzBuzz.Tests
         // Given
         private FizzBuzzGenerator _fizzBuzzGenerator = new FizzBuzzGenerator();
 
-        [Test]
-        public void ConvertNumberToString()
+        [TestCase(1, "1")]
+        
+        public void ConvertNumberToString(int input, string output)
         {
             // When
-            var result = _fizzBuzzGenerator.Generate(1);
+            var result = _fizzBuzzGenerator.Generate(input);
 
             // Then
-            Assert.That(result, Is.EqualTo("1"));
+            Assert.That(result, Is.EqualTo(output));
         }
     }
 }
