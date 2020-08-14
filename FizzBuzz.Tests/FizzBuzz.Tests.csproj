@@ -44,6 +44,13 @@
     <ItemGroup>
         <Compile Include="FizzBuzzGeneratorShould.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
+        
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\FizzBuzz\FizzBuzz.csproj">
+        <Project>{a8f8c75b-f24d-4d32-a973-00af42125ee2}</Project>
+        <Name>FizzBuzz</Name>
+      </ProjectReference>
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
