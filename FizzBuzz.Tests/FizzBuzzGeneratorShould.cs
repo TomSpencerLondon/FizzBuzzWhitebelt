@@ -12,6 +12,7 @@ namespace FizzBuzz.Tests
 
         [TestCase(1, "1")]
         [TestCase(2, "2")]
+        [TestCase(3, "Fizz")]
         [TestCase(4, "4")]
         public void ConvertNumberToString(int input, string output)
         {
